@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct WeatherPredictionGenerator {
+        
     
     // Create an array of possible temperature ranges
     static private let temperatureRanges: [CelsiusTemperatureRange] = [
