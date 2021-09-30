@@ -68,14 +68,14 @@ struct WeatherPredictionGenerator {
     static func getPrediction() -> Prediction {
         
         // Get a possible temperature range
-        let temperatureRange = temperatureRanges.first!
+        let temperatureRange = temperatureRanges.randomElement()!
         
         // Now get an exact temperature from that range
         let temperature = Double.random(in: temperatureRange.bounds)
         let feel = temperatureRange.feel
 
         // Get a weather condition
-        let condition = weatherConditions.first!
+        let condition = weatherConditions.randomElement()!
         
         // Make the prediction
         let prediction = Prediction(temperature: temperature,
@@ -86,6 +86,7 @@ struct WeatherPredictionGenerator {
         return prediction
         
         // TODO: Implement more appropriate logic above so that the same prediction is not always returned
+        
         
     }
     
