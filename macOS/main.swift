@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 // Make an emppty array of type prediction
-var history: [Prediction] = []
+//var history: [Prediction] = []
+var history = WeatherViewModel()
 
 
 while true {
@@ -38,7 +40,7 @@ while true {
         let prediction = WeatherPredictionGenerator.getPrediction()
 
         // Add the prediction to the array
-        history.append(prediction)
+        history.predictionHistory.append(prediction)
         
         // Show the prediction
         print("Current conditions are \(prediction.condition.description.lowercased()) with a temperature of \(String(format: "%.1f", arguments: [prediction.temperature])) °C.")
@@ -51,6 +53,3 @@ while true {
     }
 
 }
-
-
-

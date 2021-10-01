@@ -14,6 +14,7 @@ struct ContentView: View {
     var body: some View {
         Text("Current conditions are \(Prediction.condition.description.lowercased()) with a temperature of \(String(format: "%.1f", arguments: [Prediction.temperature])) °C.")
             .padding()
+        List prediction in 
     }
 }
 
