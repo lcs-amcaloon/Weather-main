@@ -7,7 +7,7 @@
 
 import Foundation
 
-@ObservableObject struct Prediction {
+struct Prediction {
     
     // The precise temperature for a given prediction
     let temperature: Double

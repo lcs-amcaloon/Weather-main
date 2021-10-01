@@ -21,6 +21,7 @@
 		CE2AC2112705F9280032EEFE /* WeatherCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82BBDB2705CCC400BD6434 /* WeatherCondition.swift */; };
 		CE2AC2122705F92A0032EEFE /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82BBD72705C87F00BD6434 /* Prediction.swift */; };
 		CE2AC2132705F92D0032EEFE /* CelsiusTemperatureRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82BBD52705C6CF00BD6434 /* CelsiusTemperatureRange.swift */; };
+		CE4A974C27075F89000E9D5B /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82BBDF2705D8E300BD6434 /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -249,6 +250,7 @@
 				CE2AC2112705F9280032EEFE /* WeatherCondition.swift in Sources */,
 				CE2AC2132705F92D0032EEFE /* CelsiusTemperatureRange.swift in Sources */,
 				CE2AC2102705F6940032EEFE /* WeatherPredictionGenerator.swift in Sources */,
+				CE4A974C27075F89000E9D5B /* WeatherViewModel.swift in Sources */,
 				CE2AC2072705F3520032EEFE /* ContentView.swift in Sources */,
 				CE2AC2122705F92A0032EEFE /* Prediction.swift in Sources */,
 				CE2AC2052705F3520032EEFE /* iOSApp.swift in Sources */,

@@ -10,12 +10,12 @@ import Foundation
 class WeatherViewModel: ObservableObject {
     @Published var predictionHistory: [Prediction] = []
     
-    func getPrediction() -> String {
-        var currentWeather = Prediction
-        currentWeather.response = WeatherPredictionGenerator.getPrediction()
-        
-        Prediction.append(currentWeather)
-        
-        return currentWeather.response
-    }
+//    func getPrediction() -> String {
+//        var currentWeather = Prediction
+//        currentWeather.response = WeatherPredictionGenerator.getPrediction()
+//        
+//        Prediction.append(currentWeather)
+//        
+//        return currentWeather.response
+//    }
 }

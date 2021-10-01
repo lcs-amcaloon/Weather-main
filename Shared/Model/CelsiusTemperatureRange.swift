@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CelsiusTemperatureRange: ObservableObject {
+struct CelsiusTemperatureRange {
     
     // Description of the feel of this temperature range
     let feel: String
