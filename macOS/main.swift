@@ -16,7 +16,7 @@ var viewModel = WeatherViewModel()
 while true {
     print("Do you want another prediction? Y/N")
     let UserInput = readLine()
-
+    
     
     switch UserInput {
         
@@ -40,12 +40,12 @@ while true {
         
         // Show the prediction
         print("Current conditions are \(prediction.condition.description.lowercased()) with a temperature of \(String(format: "%.1f", arguments: [prediction.temperature])) °C.")
-
+        
         print("That's \(prediction.feel.lowercased())!")
     case .none:
         break
     case .some(_):
         print("Please input a valid choice")
     }
-
+    
 }

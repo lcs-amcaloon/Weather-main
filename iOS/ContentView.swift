@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var Prediction = WeatherPredictionGenerator.getPrediction()
+    var viewModel = WeatherViewModel()
     
     var body: some View {
-        Text("Current conditions are \(Prediction.condition.description.lowercased()) with a temperature of \(String(format: "%.1f", arguments: [Prediction.temperature])) °C.")
+        prediction = viewModel.getPrediction()
+        Text("Current conditions are \(prediction.condition.description.lowercased()) with a temperature of \(String(format: "%.1f", arguments: [prediction.temperature])) °C.")
             .padding()
-        List prediction in 
     }
+    List for prediction in viewModel.predictionHistory("Current conditions are \(prediction.condition.description.lowercased()) with a temperature of \(String(format: "%.1f", arguments: [prediction.temperature])) °C.")
 }
 
 struct ContentView_Previews: PreviewProvider {
