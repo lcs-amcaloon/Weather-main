@@ -36,11 +36,7 @@ while true {
         }
         
     case "Y":
-        // Generate a weather prediction
-        let prediction = WeatherPredictionGenerator.getPrediction()
-
-        // Add the prediction to the array
-        viewModel.predictionHistory.append(prediction)
+        let prediction = viewModel.getPrediction()
         
         // Show the prediction
         print("Current conditions are \(prediction.condition.description.lowercased()) with a temperature of \(String(format: "%.1f", arguments: [prediction.temperature])) °C.")
