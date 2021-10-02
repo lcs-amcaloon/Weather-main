@@ -12,11 +12,14 @@ struct ContentView: View {
     var viewModel = WeatherViewModel()
     
     var body: some View {
-        prediction = viewModel.getPrediction()
+        let prediction = viewModel.getPrediction()
         Text("Current conditions are \(prediction.condition.description.lowercased()) with a temperature of \(String(format: "%.1f", arguments: [prediction.temperature])) °C.")
             .padding()
+        List(viewModel.predictionHistory) { prediction in
+            Text("Current conditions are \(prediction.condition.description.lowercased()) with a temperature of \(String(format: "%.1f", arguments: [prediction.temperature])) °C.")
+        }
     }
-    List for prediction in viewModel.predictionHistory("Current conditions are \(prediction.condition.description.lowercased()) with a temperature of \(String(format: "%.1f", arguments: [prediction.temperature])) °C.")
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

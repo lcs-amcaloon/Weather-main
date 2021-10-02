@@ -16,7 +16,7 @@ class WeatherViewModel: ObservableObject {
     let prediction = WeatherPredictionGenerator.getPrediction()
         
         // Add the prediction to the array
-        viewModel.predictionHistory.append(prediction)
+        predictionHistory.append(prediction)
         
         return prediction
     }
